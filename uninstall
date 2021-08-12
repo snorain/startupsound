@@ -2,6 +2,7 @@
 
 #Delete files
 sudo rm -rf /etc/sound
+sudo rm -rf /bin/startupsound
 rm -rf $HOME/.config/autostart/startupsound.sh
 rm -rf $HOME/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
 
