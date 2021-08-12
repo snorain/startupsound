@@ -20,7 +20,7 @@ cd into the main folder
 ```
 cd satrtupsound
 ```
-Run the yninstall script
+Run the uninstall script
 ```
-bash yninstall
+bash uninstall
 ```
