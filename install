@@ -10,6 +10,7 @@ mkdir -p $HOME/.config
 #Copy files
 sudo cp -r etc/* /etc/
 sudo cp -r LICENSE /etc/sound/
+sudo cp -r bin/* /bin/
 sudo cp -r .config/* $HOME/.config/
 
 #Done
