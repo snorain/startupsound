@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Delete files
+sudo rm -rf /etc/sound
+rm -rf $HOME/.config/autostart/startupsound.sh
+rm -rf $HOME/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
+
+#Done
+echo "Done!"
