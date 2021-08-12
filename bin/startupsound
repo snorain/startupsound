@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#Set startup sound based on input
+if [ "$1" == "enable" ]; then
+  if [ -f "/etc/sound/play" ]; then
+    echo "Startup sound is already enabled"
+  else
+    sudo touch /etc/sound/play
+    echo "Startup sound enabled"
+  fi
+elif [ "$1" == "disable" ]; then
+  if [ -f "/etc/sound/play" ]; then
+    sudo rm -rf /etc/sound/play
+    echo "Startup sound disabled"
+  else
+    echo "Startup sound is already disabled"
+  fi
+elif [ "$1" == "check" ]; then
+  if [ -f "/etc/sound/play" ]; then
+    echo "Startup sound is enabled"
+  else
+    echo "Startup sound is disabled"
+  fi
+elif [ "$1" == "test" ]; then
+  if [ -f "/etc/sound/play" ]; then
+    echo "Playing startup sound"
+    python3 /etc/sound/startup.py
+  else
+    echo "Startup sound is disabled"
+  fi
+else
+  echo "Unkown input recived:"
+  echo -e "Valid options are:\nenable\ndisable\ncheck\ntest\n"
+  echo "Example: startupsound enable"
+fi
