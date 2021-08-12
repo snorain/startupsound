@@ -1,1 +1,1 @@
-This directory get's coppied to /etc/sound
+This directory gets coppied to /etc/sound
