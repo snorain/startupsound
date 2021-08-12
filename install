@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Install vlc, pip3, and python3
+sudo apt install -y python3 vlc python3-pip python-dev
+
+#Make dirs
+sudo mkdir -p /etc/sound
+mkdir -p $HOME/.config
+
+#Copy files
+sudo cp -r etc/* /etc/
+sudo cp -r LICENSE /etc/sound/
+sudo cp -r .config/* $HOME/.config/
+
+#Done
+echo "Done!"
