@@ -1,0 +1,10 @@
+[Unit]
+Description=Plays the startup sound
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/etc/sound/startupsound.sh
+
+[Install]
+WantedBy=multi-user.target
