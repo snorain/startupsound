@@ -14,6 +14,11 @@ sudo cp -r etc/* /etc/
 sudo cp -r bin/* /bin/
 sudo cp -r LICENSE /etc/sound/
 
+#Change permissons
+sudo chmod 755 /etc/sound/*
+sudo chmod 755 /etc/systemd/system/startsound.service
+sudo chmod 755 /bin/startupsound
+
 #Enable startup sound
 sudo systemctl daemon-reload
 sudo systemctl enable startupsound.service
