@@ -29,7 +29,7 @@ elif [ "$1" == "test" ]; then
     echo "Startup sound is disabled"
   fi
 else
-  echo "Unkown input recived:"
+  echo "Unkown input recived: ''$1'"
   echo -e "Valid options are:\nenable\ndisable\ncheck\ntest\n"
   echo "Example: startupsound enable"
 fi

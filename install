@@ -3,15 +3,20 @@
 #Install vlc, pip3, and python3
 sudo apt install -y python3 vlc python3-pip python-dev
 
+#Install vlc-python
+sudo pip3 install python-vlc
+
 #Make dirs
 sudo mkdir -p /etc/sound
-mkdir -p $HOME/.config
 
 #Copy files
 sudo cp -r etc/* /etc/
-sudo cp -r LICENSE /etc/sound/
 sudo cp -r bin/* /bin/
-sudo cp -r .config/* $HOME/.config/
+sudo cp -r LICENSE /etc/sound/
+
+#Enable startup sound
+sudo systemctl daemon-reload
+sudo systemctl enable startupsound.service
 
 #Done
 echo "Done!"
