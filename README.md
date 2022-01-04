@@ -1,10 +1,10 @@
 # startupsound
-This plays the snorain startup ring tone on startup.
+This plays the QuintOS startup ring tone on startup.
 
 # How to install
 Clone the git repo:
 ```sh
-git clone https://github.com/snorain/startupsound
+git clone https://github.com/QuintOS/startupsound
 ```
 cd into the main folder
 ```
